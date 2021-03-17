@@ -79,13 +79,7 @@
   "id": "test",
   "name": "ExampleRule",
   "description": "Example rule for testing purposes.",
-  "sensors": {
-    "co2sensor": [
-      "co2",
-      "elsysco2-048e67",
-      "co2"
-    ]
-  },
+  "sensors": ["elsysco2-048e67"],
   "geofences": {
     "geofence1": [48.395829, 9.994795, 10]
   },
@@ -94,7 +88,7 @@
       {
         "<=": [
           {
-            "sensor": "co2sensor"
+            "sensor": ["co2", "elsysco2-048e67", "co2"]
           },
           500
         ]
