@@ -1,12 +1,12 @@
 # Activity diagrams
 
 This folder contains the relevant activity diagrams for the LoRaPark app. 
-The activites are splitted into several smaller ones: 
+The following activity diagrams describe the main activites of the application:
 
-* Rule update
-* Rule activiation
+* Rule activation
 * Rule deactivation
-* Server chache update + Event creation
-* Event handling and rule evaluation
-
-Reason for the event creation on the serverside (by calculating the delta) is, that the used API to access the sensor data doesn't provide an event based access method. 
+* Rule deletion
+* Rule download (from the global rule repository)
+* Rule evaluation
+* Server startup
+* Server update (update of the sensor values for the REST API)
